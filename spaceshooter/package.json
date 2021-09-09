@@ -1,0 +1,32 @@
+{
+  "name": "spaceshooter",
+  "description": "A Simple Space Shooter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "browserify-shim": {
+    "createjs": "global:createjs"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "dependencies": {
+    "bluebird": "~2.9.14",
+    "browserify-shim": "~3.8.1",
+    "createjs": "*",
+    "hammerjs": "*",
+    "lodash": "*",
+    "node-buzz": "*",
+    "pixeljs": "git+ssh://git@github.com/SyntaxStacks/pixeljs.git"
+  },
+  "devDependencies": {
+    "browserify": "~3.44",
+    "grunt": "0.4.4",
+    "jshint": "",
+    "webpack": "^1.12.14"
+  }
+}
